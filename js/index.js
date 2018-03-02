@@ -2,7 +2,8 @@ const choices = ['rock', 'paper', 'scissor'];
 let computerScore = 0,
     userScore = 0;
 
-const buttons = document.getElementsByTagName('button');
+const buttons = document.getElementsByClassName('button');
+console.log(buttons);
 for (button of buttons) {
     button.addEventListener('click', function () {
         calculate(this.id, computerChoice());
